@@ -7,5 +7,7 @@ app
     port: env.PORT,
   })
   .then(() => {
-    console.log('HTTP Server Running!')
+    console.log(
+      `HTTP Server Running in ${env.NODE_ENV} mode on port ${env.PORT}`,
+    )
   })
