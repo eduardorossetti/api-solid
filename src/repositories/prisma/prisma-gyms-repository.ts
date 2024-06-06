@@ -36,6 +36,11 @@ export class PrismaGymsRepository implements GymsRepository {
     return gyms
   }
 
+  async getMany() {
+    const gyms = await prisma.gym.findMany()
+    return gyms
+  }
+
   async create(data: Prisma.GymCreateInput) {
     const gym = await prisma.gym.create({
       data,

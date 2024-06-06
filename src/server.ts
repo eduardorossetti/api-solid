@@ -8,6 +8,6 @@ app
   })
   .then(() => {
     console.log(
-      `HTTP Server Running in ${env.NODE_ENV} mode on port ${env.PORT} with ${env.DATABASE_URL}`,
+      `HTTP Server Running in ${env.NODE_ENV} mode on port ${env.PORT}`,
     )
   })
